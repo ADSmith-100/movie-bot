@@ -20,14 +20,14 @@ app.listen(port, () => {
 });
 
 app.post("/getmovie", (req, res) => {
-  const movieToSearch = req.body.result.parameters.movie;
-
-  //this code from the tutorial doesn't work?
-  // req.body.queryResult &&
-  // req.body.queryResult.parameters &&
-  // req.body.queryResult.parameters.movie
-  //   ? req.body.result.parameters.movie
-  //   : "";
+  const movieToSearch =
+    //   req.body.result.parameters.movie;
+    //this code from the tutorial doesn't work?
+    req.body.queryResult &&
+    req.body.queryResult.parameters &&
+    req.body.queryResult.parameters.movie
+      ? req.body.result.parameters.movie
+      : "";
 
   //   ${movieToSearch}
 
