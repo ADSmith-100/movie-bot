@@ -49,7 +49,7 @@ app.post("/getmovie", (req, res) => {
         console.log(completeResponse);
 
         let dataToSend = movieToSearch;
-        dataToSend = `${movie.Title} was released in the year ${movie.Year}. It is directed by ${movie.Director} and stars ${movie.Actors}.\n Here some glimpse of the plot: ${movie.Plot}.
+        dataToSend = `${movie.Title} was released in the year ${movie.Year}. It was directed by ${movie.Director} and stars ${movie.Actors}.\n Here is a synopsis: ${movie.Plot}.
                 }`;
 
         return res.json({
