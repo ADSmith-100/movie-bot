@@ -31,7 +31,7 @@ app.post("/getmovie", (req, res) => {
 
   //   ${movieToSearch}
 
-  console.log(req.body.result.parameters.movie);
+  //   console.log(req.body.result.parameters.movie);
 
   const reqUrl = encodeURI(
     // "http://www.omdbapi.com/?t=Rocky&apikey=e80888db"
